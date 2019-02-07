@@ -1,0 +1,161 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{multicol}
+
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+
+\title{408D Course Guide}
+\author{Adrian Melendez Relli}
+\date{Spring 2019}
+
+\begin{document}
+
+\maketitle
+
+
+
+
+\section{Derivatives}
+\begin{multicols}{3}
+
+$$ \frac{d}{dx} \mathrm{sin(x) = cos(x)}$$
+$$ \frac{d}{dx} \mathrm{cos(x) = -sin(x)}$$
+$$ \frac{d}{dx} \mathrm{tan(x) = sec^2(x)}$$
+$$ \frac{d}{dx} \mathrm{sec(x) = sec(x)\:tan(x)}$$
+$$ \frac{d}{dx} \mathrm{cot(x) = -csc^2(x)}$$
+$$ \frac{d}{dx} \mathrm{csc(x) = -csc(x)cot(x)}$$
+
+
+\end{multicols}
+
+
+
+
+\section{Integration}
+\begin{multicols}{3}
+
+$$ \int \mathrm{sin(x)} \:\mathrm{d}x = \mathrm{-cos(x)} + C $$ 
+$$ \int \mathrm{cos(x)} \:\mathrm{d}x = \mathrm{sin(x)} + C $$
+$$ \int \mathrm{tan(x)} \:\mathrm{d}x = \mathrm{-ln|cos(x)| + C} $$
+$$ \int \mathrm{cot(x))} \:\mathrm{d}x = \mathrm{ln|sin(x)| + C} $$
+$$ \int \mathrm{sec(x))} \:\mathrm{d}x = \mathrm{ln|sec(x) + tan(x)| + C} $$
+$$ \int \mathrm{csc(x))} \:\mathrm{d}x = \mathrm{-ln|csc(x) + cot(x)| + C} $$
+
+\end{multicols}
+
+$$\mathrm{Integrate\:by\:Parts } \hspace{10mm}\int u \:\mathrm{d}v - \int v \:\mathrm{d}u$$
+
+
+
+
+
+
+\section{Product of sines and cosines}
+
+$$ \int sin^n(x) cos^m(x) $$
+
+\begin{multicols}{2}
+
+$$ \mathrm{Case \: 1: \: \: m = 1} \hspace{3mm}\frac{sin^{n+1}(x)}{n+1} + C $$ 
+
+$$\mathrm{Case \: 2: \: \: \: m = odd} $$ 
+
+\centerline{Use cos$^2$(x) = 1 - sin$^2$(x) to convert} 
+
+\centerline{all but one power of cosine to sine.}
+
+
+\medskip{}
+
+$$ \mathrm{Case \: 3: \:  n = 1} \hspace{3mm}- \frac{cos^{m+1}(x)}{m + 1} + C $$ 
+
+$$\mathrm{Case \: 4: \: \: \: n = odd} $$ 
+
+
+\centerline{Use cos$^2$(x) = 1 - sin$^2$(x) to convert}
+
+\centerline{all but one power of sine to cosine.}
+
+\medskip{}
+
+\bigskip{}
+
+
+\centerline{Case 5: Both are even, Use Double Angle Formulas}
+
+$$sin^n(x) cos^m(x) = (\frac{1}{2}(1 - cos(2x)))^{\frac{n}{2}} (\frac{1}{2}(1 + cos(2x)))^{\frac{m}{2}}$$
+
+\end{multicols}
+
+
+
+
+
+
+\section{Product of secants and tangents}
+
+$$ \int sec^n(x) tan^m(x) $$
+
+\begin{multicols}{2}
+
+$$ \mathrm{Case \: 1: \: \: n = 2} \: \: \: \: u = tan(x), \int u^m du$$
+ 
+\centerline{Case 2: n = even \hspace{3mm} Convert all but two}
+\centerline{secants to tangents}
+
+$$ \mathrm{Case \: 3: \: \: m = 1} \: \: \: \: u = sec(x), \int u^{n-1} du$$
+
+\centerline{Case 4: m = odd \hspace{3mm} Convert all }
+\centerline{but one power of tangent into secants}
+
+\bigskip{}
+
+\end{multicols}
+
+\centerline{Be sure to factor out any coefficient inside trig function, e.g. $ cos(3x) \: \mathrm{becomes} \: \frac{1}{3}\int~ (\mathrm{u-sub})$}
+
+
+
+
+
+
+\section{Trigonometric Formulas}
+
+\begin{multicols}{2}
+
+
+\centerline{Double Angle Formulas:}
+
+\medskip{}
+
+$$sin(2x) = 2 sin(x) cos(x)$$
+
+$$cos(2x) = cos^2(x) - sin^2(x)$$
+
+$$cos(2x) = 1 - 2sin^2(x)$$
+
+$$cos(2x) = 2cos^2(x) - 1$$
+
+\centerline{Products of Trig Functions with Different Angles}
+
+$$sin(A)sin(B) = \frac{cos(A-B) - cos(A + B)}{2}$$
+
+$$cos(A)cos(B) = \frac{cos(A-B) + cos(A + B)}{2}$$
+
+$$sin(A)cos(B) = \frac{sin(A + B) + sin(A - B)}{2}$$
+
+\end{multicols}
+
+
+
+
+\section{Trig Substitution}
+
+
+
+\end{document}
