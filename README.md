@@ -1,2 +1,2 @@
 # Integration Cheat-Sheet
-Latex Document covering all information needed for UT Math 408D.
+Latex Document for Calculus M408D, which I did kinda bad in anyways.
